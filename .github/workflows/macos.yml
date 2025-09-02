@@ -51,6 +51,7 @@ jobs:
         run: |
           # Use GLM 1.0.0 as later versions don't build with clang
           brew install supertux/homebrew-supertux/glm
+          brew untap supertux/homebrew-supertux
           brew install cmake bash rename libogg libvorbis glew \
                        openal-soft sdl2 sdl2_image libraqm freetype \
                        glib gtk-doc zlib physfs fmt
