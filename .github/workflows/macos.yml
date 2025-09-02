@@ -49,6 +49,7 @@ jobs:
       - name: Install macos dependencies
         if: ${{ matrix.os == 'macos-13' }}
         run: |
+          vcpkg integrate install
           vcpkg install glm
           brew install cmake bash rename libogg libvorbis glew \
                        openal-soft sdl2 sdl2_image libraqm freetype \
