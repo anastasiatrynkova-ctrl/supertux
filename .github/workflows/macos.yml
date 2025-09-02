@@ -51,10 +51,9 @@ jobs:
         run: |
           # Use GLM 1.0.0 as later versions don't build with clang
           brew install supertux/homebrew-supertux/glm
-          brew untap supertux/homebrew-supertux
-          brew install cmake bash rename libogg libvorbis glew \
-                       openal-soft sdl2 sdl2_image libraqm freetype \
-                       glib gtk-doc zlib physfs fmt
+          brew install homebrew/cmake homebrew/bash homebrew/rename homebrew/libogg homebrew/libvorbis homebrew/glew \
+                       homebrew/openal-soft homebrew/sdl2 homebrew/sdl2_image homebrew/libraqm homebrew/freetype \
+                       homebrew/glib homebrew/gtk-doc homebrew/zlib homebrew/physfs homebrew/fmt
 
           install_name_tool -change \
             '@rpath/libsharpyuv.0.dylib' \
